@@ -20,16 +20,28 @@
                 <input type="radio" id="search-type-random" name="search-type" value="random" checked />
                 <label for="search-type-random">Imagens Aliatórias</label>
 
-                <input type="radio" id="search-type-range" name="search-type" value="data-range" />
+                <input type="radio" id="search-type-range" name="search-type" value="date-range" />
                 <label for="search-type-data-range">Imagens por período</label>
-
             </fieldset>
 
-            <fieldset> </fieldset>
+            <fieldset>
+                <legend>Imagens Aliatótias</legend>
 
-            <fieldset> </fieldset>
+                <input name="random-qty" id="random-qty" type="number" value="10" />
+                <label for="random-qty">Quantidade</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Imagens por período</legend>
+                <label for="start-date">Data de início:</label>
+                <input id="start-date" name="start-date" type="date" />
+
+                <label for="end-date">Data final:</label>
+                <input id="end-date" name="end-date" type="date" />
+            </fieldset>
+
             <div>
-                <button yype="submit">Pesquisar</button>
+                <button type="submit">Pesquisar</button>
             </div>
         </form>
     </div>
